@@ -4,17 +4,17 @@ class Solution(object):
         :type n: int
         :rtype: List[str]
         """
-        arr = []
+        ans = []
         for i in range(1, n+1):
             if(i % 3 == 0 and i % 5 == 0):
-                arr.append("FizzBuzz")
+                ans.append("FizzBuzz")
                 continue
             elif(i % 3 == 0):
-                arr.append("Fizz")
+                ans.append("Fizz")
                 continue
             elif(i % 5 == 0):
-                arr.append("Buzz")
+                ans.append("Buzz")
                 continue
             else:
-                arr.append(str(i))
-        return arr
+                ans.append(str(i))
+        return ans
